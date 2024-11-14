@@ -4,6 +4,23 @@ class Program
 {
     static void Main()
     {
+        // Laget en instans av klassen Primitives
+        Primitives primitives = new();
+
+        // Satt verdier til string og int
+        primitives.someString = "Something Something";
+        primitives.someInt = 20;
+
+        // Laget en liste med string og int
+        var primitivesList = new List<object>();
+        primitivesList.Add(primitives.someString);
+        primitivesList.Add(primitives.someInt);
+
+        foreach (var item in primitivesList)
+        {
+            Console.WriteLine(item);
+        }
+
         // Laget en generisk string variabel
         var strData = new Generic<string>();
         strData.Data = "Hello, World!";

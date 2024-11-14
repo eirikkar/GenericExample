@@ -1,6 +1,5 @@
-class Generic<T>
+class Primitives
 {
-    public T? Data { get; set; }
     public string? someString { get; set; }
     public int someInt { get; set; }
 }
